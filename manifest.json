@@ -1,0 +1,53 @@
+{
+  "name": "calendly-integration",
+  "vendor": "fstudio",
+  "version": "0.0.1",
+  "title": "Calendly integration",
+  "description": "Render calendly iframe",
+  "mustUpdateAt": "2018-01-04",
+  "categories": [],
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x"
+  },
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "node": "6.x",
+    "react": "3.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "colossus-write-logs"
+    }
+  ],
+  "settingsSchema": {
+    "title": "Calendly app",
+    "type": "object",
+    "properties": {
+      "divClass": {
+        "title": "Calendly div class",
+        "type": "string",
+        "description": ""
+      },
+      "divDataUrl": {
+        "title": "Calendly div data URL",
+        "type": "string",
+        "description": ""
+      },
+      "scriptUrl": {
+        "title": "Calendly script URL",
+        "type": "string",
+        "description": ""
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
