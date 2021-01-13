@@ -16,9 +16,6 @@
     "node": "6.x",
     "react": "3.x"
   },
-  "scripts": {
-    "prereleasy": "bash lint.sh"
-  },
   "credentialType": "absolute",
   "policies": [
     {
